@@ -3,10 +3,7 @@
 namespace App\Orchid\Screens\Post;
 
 use App\Models\Post;
-use App\Orchid\Layouts\Post\PostListLayout;
 use App\Orchid\Layouts\Post\PostTrashedListLayout;
-use Orchid\Screen\Actions\Button;
-use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
 
 class PostTrashedListScreen extends Screen

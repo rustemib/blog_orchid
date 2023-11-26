@@ -3,9 +3,6 @@
 namespace App\Orchid\Screens\Comment;
 
 use App\Models\Comment;
-use App\Models\User;
-use Orchid\Screen\Actions\Link;
-use Orchid\Screen\Fields\Relation;
 use Orchid\Screen\Screen;
 use Orchid\Screen\TD;
 use Orchid\Support\Facades\Layout;
@@ -52,7 +49,6 @@ class CommentListScreen extends Screen
     public function layout(): iterable
     {
         return [
-            // Используйте Layout::table() для работы с объектами TD
             Layout::table('comment', [
                 TD::make('comment.id', 'ID')
                     ->render(function ($comment) {
